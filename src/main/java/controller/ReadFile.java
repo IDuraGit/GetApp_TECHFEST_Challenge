@@ -21,8 +21,8 @@ public class ReadFile {
     public static int hour_Global;
     public static int speed_Global;
 
-    public static int[] arrayHours = new int[7];
-    public static float[] arraySpeed = new float[7];
+    public static int[] arrayHours;
+    public static float[] arraySpeed;
 
     public static int getHour_Global() {
         return hour_Global;
@@ -46,40 +46,30 @@ public class ReadFile {
                 "AvgSpeedPerhour.csv"));
 
 // read file line by line
-        String line = null;
+        String line = reader.readLine();
         Scanner scanner = null;
-        int index = 0;
+
+        scanner = new Scanner(line);
 
         while ((line = reader.readLine()) != null) {
-            Speed speed = new Speed();
+            // Speed speed = new Speed();
             scanner = new Scanner(line);
             scanner.useDelimiter(",");
 
-            String hour = scanner.next();
-            String speedData = scanner.next();
-            if (index > 0) {
+            String hour1 = scanner.next();
+            String speedData1 = scanner.next();
+            arrayHours = ArrayUtils.add(arrayHours, Integer.parseInt(hour1));
+            arraySpeed = ArrayUtils.add(arraySpeed, Float.parseFloat(speedData1));
 
-                arrayHours = ArrayUtils.add(arrayHours, Integer.parseInt(hour));
-                
-               
-                
-                arraySpeed = ArrayUtils.add(arraySpeed, Float.parseFloat(speedData));
-                
-                System.out.println("Hour :" + hour);
-                System.out.println("Speed :" + speedData);
+        }
 
-            }
+        for (int i = 0; i < arrayHours.length; i++) {
 
-            
-            
-            index = index + 1;
+            System.out.println("arrayHours" + arrayHours[i]);
+            System.out.println("arraySpeed" + arraySpeed[i]);
 
-           // System.out.println("Speed" + speedData);
-         //  arraySpeed = ArrayUtils.add(arraySpeed, Float.parseFloat(speedData));
         }
 
         return 1;
-
     }
-
 }

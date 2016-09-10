@@ -21,4 +21,7 @@ public class TestProfile2 {
         new Profile2();
     }
     static final int PETROL = 1;
+    static final int SPEED = 100;
+    static final int BREAKING_AVERAGE = 50;
+    
 }

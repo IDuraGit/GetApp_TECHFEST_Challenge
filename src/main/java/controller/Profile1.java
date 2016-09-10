@@ -11,4 +11,16 @@ package controller;
  */
 public class Profile1 {
     
+    int speed;
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    
+    
+    
 }
