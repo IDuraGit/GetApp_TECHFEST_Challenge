@@ -10,10 +10,10 @@ package controller;
  * @author Isaac
  */
 public class Profile2 {
-    
-    int speed=0;
-    
-    int breaks=0;
+
+    int speed = 0;
+
+    int breaks = 0;
 
     public int getSpeed() {
         return speed;
@@ -38,7 +38,7 @@ public class Profile2 {
     public void setHour(int hour) {
         this.hour = hour;
     }
-    
-    int hour=0;
-    
+
+    int hour = 0;
+
 }
