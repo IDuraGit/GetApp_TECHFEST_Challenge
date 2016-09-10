@@ -34,7 +34,7 @@ public class Play {
         ActionTaken_by_Trigger actionTAken_by_Trigger = new ActionTaken_by_Trigger();
 
         triggersUp = dataTratement.getCompareCurrentSpeed_Average();
-         //actionTAken_by_Trigger.activaeMusic();
+        //actionTAken_by_Trigger.activaeMusic();
 
         if (!triggersUp) {
 
