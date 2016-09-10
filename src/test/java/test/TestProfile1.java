@@ -24,7 +24,7 @@ public class TestProfile1 {
 
     @Test
     public void testSpeedAlteration() {
-        
+
         Profile1 profile1 = new Profile1();
         DataTratement dataTratement = new DataTratement();
 
