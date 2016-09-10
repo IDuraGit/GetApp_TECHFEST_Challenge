@@ -10,7 +10,7 @@ package controller;
  * @author Isaac
  */
 public class Profile1 {
-    
+
     int speed;
 
     public int getSpeed() {
@@ -20,7 +20,5 @@ public class Profile1 {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
-    
-    
-    
+
 }
