@@ -19,7 +19,7 @@ public class AllTests extends TestCase {
     public static TestSuite suite() {
         TestSuite suite = new TestSuite("Test for the Test package");
 
-                //suite.addTestSuite(TestPlayerB.class);
+        //suite.addTestSuite(TestPlayerB.class);
         return suite;
     }
 
