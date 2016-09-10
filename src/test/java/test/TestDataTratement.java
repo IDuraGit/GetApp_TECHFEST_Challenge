@@ -36,21 +36,19 @@ public class TestDataTratement {
 
         assertTrue(readFile.getAllHours() != -1);
 
-      //  assertFalse(dataTratement.getSpeed_Average() < dataTratement.getCurrentSpeed());
+        //  assertFalse(dataTratement.getSpeed_Average() < dataTratement.getCurrentSpeed());
         //assertTrue(dataTratement.getCompareCurrentSpeed_Average());
-
         //return 1;
     }
 
     //@Test
-
     public int test_readFile() throws IOException {
 
         // open file input stream
         ReadFile readFile = new ReadFile();
         assertTrue(readFile.getAllHours() == 1);
 
-       // assertFalse(reader.equals(null));
+        // assertFalse(reader.equals(null));
         return 1;
     }
 
