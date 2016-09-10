@@ -29,8 +29,6 @@ public class TestReadFile {
         assertTrue(readFile.getAllHours() != -1);
 
         assertFalse(dataTratement.getSpeed_Average() < 50);
-        
-        
 
     }
 }
