@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class Speed {
 
     int speed = 0;
-    int hour=0;
+    int hour = 0;
 
     String[] speed_8_hours = new String[10];
 
