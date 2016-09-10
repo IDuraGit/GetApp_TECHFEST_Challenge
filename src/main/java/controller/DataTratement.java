@@ -50,7 +50,7 @@ public class DataTratement {
 
         boolean activateTriggers = false;
         if (this.getSpeed_Average() > this.getCurrentSpeed()) {
-            
+
             activateTriggers = false;
 
         } else {
